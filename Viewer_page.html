@@ -1,0 +1,33 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Wikipedia Viewer</title>
+
+    <!-- Bootstrap and JQuery -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--CSS and Javascript files -->
+    <link rel = "stylesheet" type = "text/css" href = "Viewer_style.css" />
+    <script type="text/javascript" src="Viewer_code.js"></script>
+  </head>
+  <body id="body">
+    <div class= "container container-fluid" id="main-container">
+      <img src="learn.png" alt="image" id="max-pic"/>
+
+      <div class="container container-fluid " id="searching-div">
+          <input id ="search" type="text" class="form-control" autocomplete="on"/>
+      </div>
+      <br />
+      <div class="col-xs-6" align="center" id="btns-div">
+        <button class="btn" id="search-btn" onclick="getKey()">Search</button>
+        <button class="btn" id="lucky-btn">I feel lucky!</button>
+      </div>
+      <br /><br />
+      <div class="container container-fluid jumborton general-text" id ="result-div">
+
+      </div>
+    </div>
+  </body>
+</html>
